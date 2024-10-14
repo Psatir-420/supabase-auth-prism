@@ -37,7 +37,7 @@ export default function Home() {
         <h1 className="text-xl font-bold text-indigo-600">Url Shortener</h1>
         <p>Url Shortener With Next, Prism, and Supabase</p>
         <form onSubmit={handleSubmit} className="flex space-x-4">
-          <input type="text" className="rounded p-1" name="url" placeholder="Input Url" required />
+          <input type="text" className="rounded p-1 text-slate-700" name="url" placeholder="Input Url" required />
           <button disabled={loading} type="submit" className="bg-cyan-500 rounded border-white p-1 border-2 text-white">{loading ? 'Shortening...' : 'Shorten'}</button>
         </form>
         {shortUrl && ( 
@@ -45,7 +45,7 @@ export default function Home() {
             <Link target="_blank" href={`/pages/${shortUrl}`}>Your shortened URL: {shortUrl}</Link>
             <button 
             onClick={handleCopy} 
-            className="bg-blue-500 text-white px-2 py-1 rounded ml-2"
+            className="bg-blue-500 text-white p1 rounded ml-2"
           >
             {copied ? 'Copied!' : 'Copy'}
           </button>
