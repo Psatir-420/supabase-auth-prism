@@ -45,7 +45,7 @@ export default function Home() {
             <Link target="_blank" href={`/pages/${shortUrl}`}>Your shortened URL: {shortUrl}</Link>
             <button 
             onClick={handleCopy} 
-            className="bg-blue-500 text-white p1 rounded ml-2"
+            className="bg-blue-500 text-white p-1 rounded ml-2"
           >
             {copied ? 'Copied!' : 'Copy'}
           </button>
